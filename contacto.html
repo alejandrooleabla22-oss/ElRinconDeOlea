@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactar | ElRinconDeOlea</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="contact-body">
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">ElRincon<span class="gradient-text">DeOlea</span></a>
+                <div class="nav-links">
+                    <a href="index.html">Inicio</a>
+                    <a href="suscripcion.html">Suscripciones</a>
+                    <a href="contacto.html" class="active btn">Contactar</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="contact-wrapper">
+        <div class="contact-container">
+            <div class="contact-header text-center">
+                <h1 class="gradient-text">Iniciar Reparación</h1>
+                <p>Cuéntanos tu problema y te daremos solución en tiempo récord.</p>
+                <div class="location-badge" style="margin-top: 15px; color: var(--accent-color); font-weight: 600;">
+                    <i class="fas fa-map-marker-alt"></i> Málaga, España
+                </div>
+            </div>
+
+            <form class="premium-form" id="contactForm">
+                <!-- ... existing form fields ... -->
+                <div class="form-row">
+                    <div class="input-group">
+                        <input type="text" id="nombre" name="nombre" required placeholder=" " autocomplete="off">
+                        <label for="nombre">Nombre y Apellido</label>
+                        <i class="fas fa-user input-icon"></i>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="email" id="email" name="email" required placeholder=" " autocomplete="off">
+                        <label for="email">Correo Electrónico</label>
+                        <i class="fas fa-envelope input-icon"></i>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="input-group">
+                        <input type="tel" id="telefono" name="telefono" required placeholder=" " autocomplete="off">
+                        <label for="telefono">Teléfono</label>
+                        <i class="fas fa-phone input-icon"></i>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" id="dispositivo" name="dispositivo" required placeholder=" "
+                            autocomplete="off">
+                        <label for="dispositivo">Dispositivo (Modelo)</label>
+                        <i class="fas fa-mobile-alt input-icon"></i>
+                    </div>
+                </div>
+
+                <div class="input-group full-width">
+                    <input type="text" id="problema" name="problema" required placeholder=" " autocomplete="off">
+                    <label for="problema">Problema (Resumen)</label>
+                    <i class="fas fa-exclamation-triangle input-icon"></i>
+                </div>
+
+                <div class="input-group full-width">
+                    <textarea id="detalles" name="detalles" rows="4" required placeholder=" "></textarea>
+                    <label for="detalles">Algo más de información...</label>
+                    <i class="fas fa-comment-dots input-icon textarea-icon"></i>
+                </div>
+
+                <div class="consultancy-box">
+                    <input type="checkbox" id="consultoria" name="consultoria">
+                    <label for="consultoria" class="consultancy-card">
+                        <div class="consultancy-info">
+                            <i class="fas fa-headset"></i>
+                            <div>
+                                <strong>Consultoría Personalizada</strong>
+                                <small>Sesión técnica directa con Alejandro</small>
+                            </div>
+                        </div>
+                        <span class="price-tag">+15€</span>
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-glow">
+                    <span>Enviar Solicitud <i class="fas fa-paper-plane"></i></span>
+                </button>
+            </form>
+
+            <div id="successMessage" class="success-card" style="display: none;">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h2>¡Solicitud Enviada!</h2>
+                <p>Hemos recibido tus datos correctamente. Un técnico se pondrá en contacto contigo en las próximas
+                    horas.</p>
+                <button onclick="location.reload()" class="btn-glow"><span>Enviar otra solicitud</span></button>
+            </div>
+        </div>
+    </div>
+
+    <a href="https://wa.me/34608324955" class="floating-btn" target="_blank" rel="noopener noreferrer"
+        title="Contactar por WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="35" height="35" fill="white">
+            <path
+                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-5.5-2.8-23.2-8.5-44.2-27.1-16.4-14.6-27.4-32.7-30.6-38.1-3.2-5.5-.3-8.4 2.4-11.2 2.5-2.5 5.5-6.4 8.3-9.6 2.8-3.2 3.7-5.5 5.5-9.3 1.9-3.7 1-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 13.3 5.7 23.7 9.1 31.7 11.7 13.3 4.2 25.4 3.6 35 2.2 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+        </svg>
+    </a>
+
+    <footer style="margin-top: 0; background: rgba(0,0,0,0.8);">
+        <div class="container text-center">
+            <div class="footer-slogan" style="margin-bottom: 15px; font-style: italic; color: var(--accent-color);">
+                "Tu comodidad es nuestra satisfacción"
+            </div>
+            <div class="footer-info" style="margin-bottom: 20px; color: var(--text-muted);">
+                <span><i class="fas fa-map-marker-alt"></i> Málaga, España</span> |
+                <span><i class="fas fa-shield-alt"></i> 2 Meses de Garantía</span>
+            </div>
+            <div class="closing-notice">
+                ⚠️ Cierre de atención: 22:00h
+            </div>
+            <p style="color: var(--text-muted);">&copy; 2026 ElRinconDeOlea. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

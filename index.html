@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElRinconDeOlea | Tarifas 2026</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">ElRincon<span class="gradient-text">DeOlea</span></a>
+                <div class="nav-links">
+                    <a href="index.html" class="active" style="color: var(--accent-color);">Inicio</a>
+                    <a href="suscripcion.html">Suscripciones</a>
+                    <a href="contacto.html" class="btn">Contactar</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="min-height: 85vh; padding-top: 100px;">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-flex-container">
+                    <a href="sobre-mi.html" class="hero-avatar-link">
+                        <div class="hero-avatar-wrapper">
+                            <img src="images/logo-pixel.png" alt="Avatar ElRinconDeOlea" class="hero-avatar">
+                        </div>
+                    </a>
+                    <div class="hero-text-content">
+                        <h1>Mantenimiento y <br><span class="gradient-text">Reparación</span></h1>
+                        <p
+                            style="font-size: 1.4rem; color: var(--accent-color); font-weight: 600; margin-bottom: 10px; font-family: var(--font-heading);">
+                            "Tu comodidad es nuestra satisfacción"
+                        </p>
+                        <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 30px;">
+                            Transparencia, Profesionalidad y Garantía.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Quick Selector Container -->
+                <div class="quick-selector-container">
+                    <div class="quick-selector-card">
+                        <div class="selector-group">
+                            <label><i class="fas fa-desktop"></i> Dispositivo</label>
+                            <select id="deviceSelector">
+                                <option value="" disabled selected>Selecciona tu equipo</option>
+                                <option value="pc">PC / Portátil</option>
+                                <option value="consola">Consola</option>
+                            </select>
+                        </div>
+                        <div class="selector-group">
+                            <label><i class="fas fa-tools"></i> Servicio</label>
+                            <select id="problemSelector" disabled>
+                                <option value="" disabled selected>Primero elige un equipo</option>
+                            </select>
+                        </div>
+                        <div class="custom-problem-wrapper" id="customProblemWrapper">
+                            <label><i class="fas fa-edit"></i> Cuéntanos qué ocurre</label>
+                            <input type="text" id="customProblemInput"
+                                placeholder="Describe brevemente qué necesitas...">
+                        </div>
+                        <button id="quickSubmit" class="btn-glow" disabled>
+                            <span>Solicitar Ayuda <i class="fas fa-paper-plane"></i></span>
+                        </button>
+                    </div>
+                </div>
+
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 30px;">Selecciona una categoría para
+                    ver precios detallados</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu-servicios" class="section-padding">
+        <div class="container">
+
+
+
+            <!-- Menu Grid - Links to separate INDIVIDUAL pages -->
+            <div class="menu-grid">
+
+                <a href="pc.html" class="menu-item">
+                    <div class="service-icon">💻</div>
+                    <h3 class="service-title">PC y Portátiles</h3>
+                </a>
+
+                <a href="consolas.html" class="menu-item">
+                    <div class="service-icon">🎮</div>
+                    <h3 class="service-title">Consolas</h3>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="section-padding brands-section">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 40px;">
+                <h2 class="gradient-text">Nuestras Marcas de Gloria</h2>
+                <p style="color: var(--text-muted);">Especialistas en el mantenimiento de los gigantes tecnológicos</p>
+            </div>
+            <div class="brands-grid">
+                <p style="color: var(--text-muted); font-style: italic;">Próximamente: Las marcas líderes que confían en
+                    nosotros...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instruments Section -->
+    <section class="section-padding" style="background: rgba(0,0,0,0.3);">
+        <div class="container">
+            <div class="instrument-box">
+                <div class="instrument-info">
+                    <h2 class="gradient-text">Tecnología y Precisión</h2>
+                    <p>En <strong>ElRinconDeOlea</strong> no solo realizamos mantenimiento, lo hacemos con maestría.
+                        Utilizamos
+                        instrumental de precisión de última generación para asegurar que cada circuito sea tratado con
+                        el cuidado que merece.</p>
+                    <div class="instrument-disclaimer">
+                        <i class="fas fa-microscope"></i> Nota: Dado que actualizamos constantemente nuestro equipo
+                        técnico, consulta en nuestro taller para conocer el detalle de nuestro instrumental y
+                        herramientas de precisión actuales.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Removed (Moved to contact.html) -->
+
+
+    <footer>
+        <div class="container">
+            <div
+                style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 30px;">
+                <!-- Left Side: Slogan & Copyright -->
+                <div class="footer-left" style="flex: 1; min-width: 300px; text-align: left;">
+                    <div class="footer-slogan"
+                        style="margin-bottom: 20px; font-style: italic; color: var(--accent-color); font-size: 1.1rem;">
+                        "Tu comodidad es nuestra satisfacción"
+                    </div>
+                    <div class="closing-notice" style="margin-bottom: 15px; display: inline-block;">
+                        ⚠️ Cierre de atención: 22:00h
+                    </div>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">&copy; 2026 ElRinconDeOlea. Todos los
+                        derechos reservados.</p>
+                </div>
+
+                <!-- Right Side: Global Config moved here -->
+                <div class="footer-right" style="flex: 1; min-width: 300px;">
+                    <div class="global-config"
+                        style="margin-bottom: 0; padding: 15px; background: rgba(0, 242, 255, 0.05);">
+                        <div class="config-grid" style="justify-content: flex-start; text-align: left; gap: 15px;">
+                            <div class="config-item">
+                                <strong><i class="fas fa-microchip"></i> Diagnóstico:</strong> 15 € <span
+                                    class="muted-notice">(GRATIS
+                                    si reparas)</span>
+                            </div>
+                            <div class="config-item">
+                                <strong><i class="fas fa-tools"></i> Mano de Obra:</strong> Según servicio.
+                            </div>
+                            <div class="config-item">
+                                <strong><i class="fas fa-shield-alt"></i> Garantía:</strong> <span
+                                    class="highlight-text">2 Meses</span>
+                            </div>
+                            <div class="config-item">
+                                <strong><i class="fas fa-map-marker-alt"></i> Ubicación:</strong> Málaga, España.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/34608324955" class="floating-btn" target="_blank" rel="noopener noreferrer"
+        title="Contactar por WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="35" height="35" fill="white">
+            <path
+                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-5.5-2.8-23.2-8.5-44.2-27.1-16.4-14.6-27.4-32.7-30.6-38.1-3.2-5.5-.3-8.4 2.4-11.2 2.5-2.5 5.5-6.4 8.3-9.6 2.8-3.2 3.7-5.5 5.5-9.3 1.9-3.7 1-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 13.3 5.7 23.7 9.1 31.7 11.7 13.3 4.2 25.4 3.6 35 2.2 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
